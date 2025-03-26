@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de Comunicaciones y Redes</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Sistemas de Comunicaciones y Redes</h1>
+    </header>
+
+
+
+
+
+    <main>
+        <section>
+            <h2>Introducción</h2>
+            <p>
+                Un sistema de comunicaciones se basa en la transmisión de la información,
+                de forma que se garantice el envío de mensajes desde un lugar y su
+                posterior recepción en otro lugar remoto.
+            </p>
+        </section>
+        
+        <section>
+            <h2>Partes de un Sistema de Comunicaciones</h2>
+            <ul>
+                <li>Transmisor.</li>
+                <li>Medio de transmisión.</li>
+                <li>Receptor.</li>
+            </ul>
+            <p>
+                Estas partes están afectadas por diversas perturbaciones, dependiendo básicamente del medio
+                de transmisión que se utilice para el envío de la información (inalámbrico o cableado).
+            </p>
+        </section>
+        <section>
+            <h2>Objetivo</h2>
+            <p>
+                El objetivo de todo sistema de comunicaciones es que el mensaje que recibe el destinatario sea lo más parecido posible al que envía la fuente.
+            </p>
+        </section>
+        <section>
+            <h2>Sistemas de Comunicación Digital</h2>
+            <p>
+                En los últimos años se ha generalizado el uso de sistemas de comunicación digitales, que se basan en la transmisión ordenada de símbolos, que se codifican en ceros y unos.
+            </p>
+        </section>
+        <section>
+            <h2>Clasificación de Redes de Datos</h2>
+            <h3>Según su Extensión Geográfica</h3>
+            <ul>
+                <li><strong>WAN:</strong> Redes de área amplia, conectan equipos en áreas geográficas muy grandes (entre países).</li>
+                <li><strong>MAN:</strong> Redes de área metropolitana, abarcan el área geográfica de una ciudad.</li>
+                <li><strong>LAN:</strong> Redes de área local, conectan varios ordenadores en el entorno de un edificio, oficina, campus o domicilio.</li>
+                <li><strong>PAN:</strong> Redes de área personal, engloban el entorno de una persona (por ejemplo, conexión entre smartphone y PC).</li>
+            </ul>
+            <h3>Según su Forma de Explotación</h3>
+            <ul>
+                <li><strong>Redes Privadas:</strong> Usadas por compañías, organismos públicos, etc.</li>
+                <li><strong>Redes Públicas:</strong> Utilizadas por cualquier usuario, como las redes domésticas que se conectan a redes públicas gestionadas por operadores de telecomunicaciones.</li>
+            </ul>
+            <h3>Según su Tipo de Medio</h3>
+            <ul>
+                <li><strong>Redes Alámbricas:</strong> Se utiliza algún medio cableado.</li>
+                <li><strong>Redes Inalámbricas:</strong> Se utilizan ondas electromagnéticas a través del aire.</li>
+                <li><strong>Redes Mixtas:</strong> Combinación de medios cableados e inalámbricos.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Redes de Área Local: LAN</h2>
+            <p>
+                Las redes de área local (Local Area Network, LAN) permiten conectar varios equipos en un entorno de edificio,
+                oficina, domicilio, etc., con el objetivo de compartir los recursos que ofrece la red: servicios de impresión,
+                compartición de ficheros, políticas de seguridad, etc.
+            </p>
+            <h3>Características Principales</h3>
+            <ul>
+                <li>Suelen tener una velocidad alta con una tasa de error reducida.</li>
+                <li>Son redes privadas habitualmente.</li>
+                <li>
+                    Cuentan con protocolos definidos: un conjunto de reglas que deben cumplir los equipos que forman
+                    una red para poder comunicarse, definidos por organismos especializados.
+                </li>
+                <li>Pueden contar con diferentes topologías.</li>
+                <li>
+                    Tienen un coste reducido, ya que permiten compartir recursos de la red entre diferentes usuarios.
+                </li>
+                <li>
+                    Necesitan un mantenimiento y una administración continua para garantizar las prestaciones de la red.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Topología de las Redes de Datos</h2>
+            <h3>En Estrella</h3>
+            <p>
+                Existe un nodo central que interconecta los equipos (conmutador). Este nodo tiene funciones y privilegios especiales,
+                encargándose de controlar al resto para garantizar la seguridad. Si el conmutador deja de funcionar, la red completa
+                se ve afectada. Esta topología es fácilmente ampliable.
+            </p>
+            <h3>En Árbol</h3>
+            <p>
+                Los equipos están organizados en niveles jerarquizados con dependencia unos de otros. Al enviar un mensaje, se deben recorrer las “ramas” hasta alcanzar el destino. Es escalable, sencilla de gestionar y los problemas se detectan rápidamente. Sin embargo, puede sufrir congestión debido a cuellos de botella.
+            </p>
+            <h3>En Bus</h3>
+            <p>
+                Se caracteriza por un canal compartido llamado bus. Todos los equipos “escuchan” el bus, tomando los mensajes destinados a ellos. Son económicas, fáciles de gestionar y mantener, y permiten añadir nuevos dispositivos. Sin embargo, pueden sufrir congestión y, si un nodo falla, toda la red deja de funcionar. Además, necesitan terminadores de red para indicar el final de la misma.
+            </p>
+            <h3>En Anillo</h3>
+            <p>
+                Los equipos de la red se conectan entre sí formando un anillo, de forma que los datos pasan de equipo a equipo a través de un medio compartido. 
+                Son redes baratas y no presentan tantos problemas de congestión como en las redes en bus. Están provistas de unidades de acceso a la red (MAUs),
+                lo que las dota de mayor eficiencia y permite detectar errores de forma más rápida.
+            </p>
+            <h3>En Malla</h3>
+            <p>
+                En una red en malla, todos los equipos están interconectados entre sí. Si hay un problema o avería en un tramo, siempre existe una ruta alternativa 
+                para permitir la comunicación. Cada nodo decide la mejor vía para encaminar el mensaje hasta el destinatario.
+            </p>
+            <p>
+                Estas redes son fiables y seguras, con una baja tasa de error. Un fallo en un equipo o enlace no afecta a toda la red. Sin embargo, 
+                requieren una infraestructura mayor, lo que las hace menos económicas.
+            </p>
+            <h3>Híbrida</h3>
+            <p>
+                La topología híbrida combina varias de las topologías anteriores. Es la más común, ya que en redes con cierta complejidad 
+                resulta difícil ceñirse a una única topología.
+            </p>
+            <p>
+                Son fácilmente escalables e inmunes a problemas en alguno de sus equipos. No obstante, suelen depender de varios conmutadores centrales 
+                y son más complejas de implementar y mantener.
+            </p>
+        </section>
+        <section>
+            <h2>Principales Componentes de una Red</h2>
+            <h3>Cableado, Conectores y Espacio Físico</h3>
+            <p>
+                Se trata de la infraestructura física de la red, que posibilita la conexión entre elementos a nivel físico mediante
+                el uso de cableado, latiguillos, conectores, interfaces de comunicación, etc. Estos elementos también están presentes
+                en redes inalámbricas, aunque en menor cantidad.
+            </p>
+            <p>
+                Cada sistema de cableado cuenta con sus propios conectores, definidos en base a un estándar, para garantizar su funcionamiento
+                en diferentes redes.
+            </p>
+            <h3>Equipos Activos de la Red</h3>
+            <p>
+                En este grupo se incluyen ordenadores, equipos de conmutación, equipos de usuario (portátiles, smartphones, impresoras),
+                routers, servidores, etc. Son las máquinas que cumplen alguna función en la red.
+            </p>
+            <p>
+                A cada equipo con una interfaz de red propia (ya sea cableada o inalámbrica) se le conoce como “nodo”. Así mismo, un
+                “host” es un nodo que da soporte a un servicio de red, ya sea produciéndolo o consumiéndolo.
+            </p>
+            <h3>Software de Red</h3>
+            <p>
+                Todos los nodos de una red realizan operaciones complejas para mantener la comunicación en la misma y cumplir con los
+                protocolos y estándares establecidos. Para ello, necesitan software especializado conocido como “software de red”.
+            </p>
+        </section>
+        <section>
+            <h2>Estándares y Organismos de Normalización</h2>
+            <h3>ANSI – American National Standards Institute</h3>
+            <p>
+                ANSI es una organización sin ánimo de lucro que se dedica a desarrollar estándares para productos, servicios, 
+                procesos y sistemas en Estados Unidos.
+            </p>
+            <h3>ICANN – Internet Corporation for Assigned Names and Numbers</h3>
+            <p>
+                ICANN es una organización sin ánimo de lucro y de carácter no gubernamental que administra la asignación de nombres 
+                y números en Internet para unificar criterios, aportar estabilidad e impedir direcciones duplicadas.
+            </p>
+            <h3>IEEE – Institute of Electrical and Electronics Engineers</h3>
+            <p>
+                El IEEE (llamado IE-cubo) es una asociación formada a nivel mundial por profesionales y académicos relacionados con 
+                la ingeniería, con fines no lucrativos. Promueve la creatividad, el desarrollo y los avances en campos relacionados con 
+                la electrónica, comunicaciones y tecnologías de la información.
+            </p>
+            <h3>IETF – Internet Engineering Task Force</h3>
+            <p>
+                El IETF es una organización internacional sin ánimo de lucro, dedicada a la elaboración de estándares relacionados 
+                con Internet, especialmente en aspectos como la seguridad y el enrutamiento, con un nivel técnico muy especializado. 
+                Sus estándares y propuestas se conocen como RFC.
+            </p>
+        </section>
+        <section>
+            <h2>Software para Representación de Redes</h2>
+            <h3>Microsoft Visio</h3>
+            <p>
+                La herramienta Microsoft Visio se utiliza principalmente para la creación de diagramas de todo tipo, incluyendo 
+                diagramas de red, gracias a su gran simbología compatible. Sin embargo, únicamente permite representar la red, nunca su simulación.
+            </p>
+            <h3>Draw.io</h3>
+            <p>
+                Esta herramienta es totalmente gratuita y ejecutable de manera online (vía navegador). También permite la representación gráfica 
+                de cualquier red de comunicaciones, ya que cuenta con un amplio abanico de simbología compatible.
+            </p>
+            <h3>Cisco Packet Tracer</h3>
+            <p>
+                Es una herramienta implementada por Cisco y ampliamente utilizada en el ámbito de formación. Además de ofrecer opciones de 
+                representación de redes, permite añadir equipos e infraestructura, configurar dichos equipos y simular el funcionamiento 
+                de la red. Es de carácter gratuito y se usará en cursos de formación.
+            </p>
+            <h3>GNS3</h3>
+            <p>
+                Es una herramienta gratuita similar a Cisco Packet Tracer, con una gran variedad de opciones y posibilidades para representar y gestionar redes.
+            </p>
+        </section>
+    </main>
+</main>
+<footer>
+        <p>&copy; 2025. Información basada en redes y sistemas de comunicación.</p>
+</footer>
+    <button onclick="generateMultiPageStyledPDF()">Descargar como PDF</button>
+    <script>
+        async function generateMultiPageStyledPDF() {
+            const { jsPDF } = window.jspdf;
+
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pageWidth = pdf.internal.pageSize.getWidth();
+            const pageHeight = pdf.internal.pageSize.getHeight();
+            const margin = 10;
+
+            
+            const sections = document.querySelectorAll("main section");
+            let yOffset = margin;
+
+            for (const section of sections) {
+                const canvas = await html2canvas(section, { scale: 2 });
+                const imgData = canvas.toDataURL("image/png");
+                const imgWidth = pageWidth - 2 * margin;
+                const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+                if (yOffset + imgHeight > pageHeight - margin) {
+                    pdf.addPage(); 
+                    yOffset = margin;
+                }
+
+                pdf.addImage(imgData, "PNG", margin, yOffset, imgWidth, imgHeight);
+                yOffset += imgHeight + 10; 
+            }
+
+            pdf.save("sistemas_comunicaciones_y_redes.pdf");
+        }
+    </script>
+</body>
+</html>
+
